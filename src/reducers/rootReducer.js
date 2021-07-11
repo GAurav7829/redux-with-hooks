@@ -13,6 +13,9 @@ const rootReducer = (state = initialState, action) => {
         case "ADD5": return {
             counter: state.counter + action.data
         }
+        case "SUB5": return {
+            counter: state.counter - action.data
+        }
         default: return state;
     }
 }
